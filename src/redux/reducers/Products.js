@@ -1,7 +1,11 @@
-import { GET_PRODUCTS, GET_PRODUCTS_SUCCESS, GET_PRODUCTS_ERROR } from '../actions/home';
+import {
+  GET_PRODUCTS,
+  GET_PRODUCTS_SUCCESS,
+  GET_PRODUCTS_ERROR,
+} from '../actions/home';
 
-const initialState = {
-  loading: false,
+export const ProductsinitialState = {
+  loading: true,
   error: undefined,
   products: [],
 };
@@ -11,11 +15,11 @@ const getProducts = (state) => ({
   loading: true,
 });
 
-const getProductsSuccess = (state, { users }) => ({
+const getProductsSuccess = (state, { products }) => ({
   ...state,
   loading: false,
   error: '',
-  users,
+  products,
 });
 
 const getProductsError = (state, { error }) => ({
@@ -24,7 +28,7 @@ const getProductsError = (state, { error }) => ({
   error,
 });
 
-const Users = (state = initialState, action) => {
+const ProductsReducer = (state = ProductsinitialState, action) => {
   switch (action.type) {
     case GET_PRODUCTS:
       return getProducts(state);
@@ -38,4 +42,4 @@ const Users = (state = initialState, action) => {
   }
 };
 
-export default Users;
+export default ProductsReducer;

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import Users from './Users';
+import ProductsReducer from './Products';
 
 const rootReducer = combineReducers({
-  Users,
+  products: ProductsReducer,
 });
 
 export default rootReducer;
