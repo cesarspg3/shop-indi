@@ -4,8 +4,8 @@ const { GET_PRODUCTS, GET_PRODUCTS_SUCCESS, GET_PRODUCTS_ERROR } =
   ProductsTypes;
 
 export const ProductsinitialState = {
-  loading: true,
-  error: 'jajjajaa',
+  loading: false,
+  error: '',
   products: [],
 };
 

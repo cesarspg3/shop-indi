@@ -1,16 +1,11 @@
 import { ProductContainer } from './styled.comonents';
 
-const ProductList = ({ product }) => {
-  const {
-    // id,
-    model,
-    imgUrl,
-  } = product;
+const ProductList = ({ product, onClick }) => {
+  const { model } = product;
 
   return (
-    <ProductContainer>
+    <ProductContainer onClick={onClick}>
       <div>{model}</div>
-      <div>{imgUrl}</div>
     </ProductContainer>
   );
 };
