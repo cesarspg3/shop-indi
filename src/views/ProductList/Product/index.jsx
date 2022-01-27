@@ -1,7 +1,11 @@
 import { ProductContainer } from './styled.comonents';
 
 const ProductList = ({ product }) => {
-  const { id, model, imgUrl } = product;
+  const {
+    // id,
+    model,
+    imgUrl,
+  } = product;
 
   return (
     <ProductContainer>

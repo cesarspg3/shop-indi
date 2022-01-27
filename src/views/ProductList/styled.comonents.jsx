@@ -10,15 +10,6 @@ export const Container = styled.div`
   font-weight: 500;
 `;
 
-export const Button = styled.button`
-  border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
-  margin: 0 1em;
-  padding: 0.25em 1em;
-  cursor: pointer;
-`;
-
 export const LoaderContainer = styled.div`
   display: flex;
   align-items: center;

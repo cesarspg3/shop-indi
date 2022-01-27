@@ -1,10 +1,9 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 import { getProductsService } from '../../services/products';
-import {
-  GET_PRODUCTS,
-  GET_PRODUCTS_SUCCESS,
-  GET_PRODUCTS_ERROR,
-} from '../actions/home';
+import { types as ProductsTypes } from '../actions/home';
+
+const { GET_PRODUCTS, GET_PRODUCTS_SUCCESS, GET_PRODUCTS_ERROR } =
+  ProductsTypes;
 
 function* getProducts() {
   try {

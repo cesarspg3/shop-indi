@@ -1,12 +1,11 @@
-import {
-  GET_PRODUCTS,
-  GET_PRODUCTS_SUCCESS,
-  GET_PRODUCTS_ERROR,
-} from '../actions/home';
+import { types as ProductsTypes } from '../actions/home';
+
+const { GET_PRODUCTS, GET_PRODUCTS_SUCCESS, GET_PRODUCTS_ERROR } =
+  ProductsTypes;
 
 export const ProductsinitialState = {
   loading: true,
-  error: undefined,
+  error: 'jajjajaa',
   products: [],
 };
 
